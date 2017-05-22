@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>基于bootstrap响应式头部尾部组件</title>
+    <link rel="stylesheet" href="static/css/common.css">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/home.css">
+    <style>
+    @media (max-width: 768px) {
+        .pc {
+            display: none;
+        }
+        .mobile {
+            display: flex;
+        }
+        .mobile-block {
+            display: block;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="pc">
+            <div class="logo">
+                <img src="static/image/logo.png" alt="">
+            </div>
+            <div class="language">
+                <div class="language-content">
+                    <a href="javascript:;">中文</a>
+                    <span> | </span>
+                    <a href="javascript:;">EN</a>
+                </div>
+            </div>
+        </header>
+        <nav class="pc">
+            <div class="nav-left">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">产品系列</a></li>
+                    <li><a href="#">设计团队</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">最新资讯</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <input type="text" placeholder="What are you looking for?">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </div>
+        </nav>
+        <header class="mobile">
+            <div class="m-left">
+                <div class="m-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+                <div class="m-logo">
+                    <img src="static/image/logo.png" alt="">
+                </div>
+            </div>
+            <div class="m-right">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </div>
+        </header>
+        <!-- mobile-block 就是当mobile脱离文档流的时候占位用的 -->
+        <div class="mobile-block"></div>
+        <div class="service">
+            <ul class="nav nav-pills nav-justified">
+                <li class="service-item">
+                  <span class="item-pic-fb"></span>
+                  <span class="item-descri">门店分布</span>
+                </li>
+                <li class="service-item">
+                  <span class="item-pic-sh"></span>
+                  <span class="item-descri">售后服务</span>
+                </li>
+                <li class="service-item">
+                  <span class="item-pic-bt"></span>
+                  <span class="item-descri">返回页首</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+</body>
+
+</html>

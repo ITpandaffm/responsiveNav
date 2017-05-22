@@ -1,0 +1,199 @@
+body {
+	background: #f7f7f7;
+}
+a:link {
+	text-decoration: none;
+}
+
+/*********Header Start**********/
+
+header {
+	display: flex;
+}
+
+.logo {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.logo img {
+	width: 250px;
+	height: 50px;
+}
+
+.language {
+	flex-basis: 100px;
+	position: relative;
+
+}
+.language-content {
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	color: #b71414;
+}
+.language-content a {
+	color: #b71414;
+}
+
+/*mobile header*/
+
+
+
+.mobile-block {
+	display: none;
+	height: 55px;
+}
+
+.mobile {
+	display: none;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+
+
+.mobile .m-left {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.mobile .m-toggle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+}
+
+.mobile .m-toggle:hover  {
+	cursor: pointer;
+}
+
+.mobile .icon-bar {
+	border: 1px solid #000;
+	width: 25px;
+	height: 2px;
+	border-radius: 1px;
+}
+
+.mobile .icon-bar+.icon-bar {
+	margin-top: 6px;
+}
+
+.mobile .m-logo {
+	display: flex;
+	align-items: center;
+	width: 100px;
+	height: 50px;
+	margin-left: 10px;
+}
+
+.mobile .m-logo img {
+	width: 100%;
+}
+
+.mobile .m-right {
+	flex-grow: 1;
+	align-items: center;
+}
+.mobile .m-right .glyphicon {
+	float: right;
+	right: 30px;
+	top: 15px;
+	font-size: 20px;
+}
+/*********Header End**********/
+/*********Nav Start**********/
+nav {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-left {
+
+}
+.nav-left ul {
+	display: flex;
+	margin-top: 10px;
+}
+.nav-left li {
+	margin-right: 50px;
+}
+.nav-left li a {
+	color: #847e7e;
+}
+.nav-left li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.nav-right {
+	display: flex;
+	align-items: center;
+}
+.nav-right .glyphicon-search {
+	position: relative;
+	right: 20px;
+}
+.nav-right input {
+	width: 200px;
+	height: 90%;
+	font-size: 12px;
+}
+.nav-right input:focus {
+	outline: none;
+}
+
+/*********Nav End**********/
+/*********Service Start**********/
+.service {
+	padding: 20px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-top: 100px;
+}
+
+.service .service-item {
+/*	display: flex;
+	justify-content: center;
+	align-items: center;*/
+	font-size: 18px;
+	text-align: center;
+	color: #ccc;
+}
+.service .item-pic-fb {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-position: -35px -100px;
+	background-image: url('../image/sprits.png');
+}
+.service .item-pic-sh {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-position: -126px -100px;
+	background-image: url('../image/sprits.png');
+}
+.service .item-pic-bt {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-position: -209px -100px;
+	background-image: url('../image/sprits.png');
+}
+.item-descri {
+	position: relative;
+	bottom: 35px;
+}
+
+
+/*********Service End**********/
